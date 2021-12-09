@@ -1,0 +1,62 @@
+
+<%- include ("partials/head") %> 
+<body>
+    
+
+<%- include("partials/header") %> 
+<main class="product-create">
+    <section class="titulos"><h2>Crear producto</h2></section>
+    
+    <section class="forms">
+        <form action="/" method="post">
+        <div>
+            <label for="name" value="name">Nombre:<input type="text" required></label>
+        </div>
+        <div class="product-desc"> 
+            <label for="description">Descripción:</label>
+            <input type="text" minlength="4" required>
+        </div>  
+        <div>
+            <label for="prod-category">Categoría:</label>
+            <select name="prod-category" id="prod-category">
+                <option value="remeras"selected> Remeras</option>
+                <option value="abrigos">Abrigos</option>
+                <option value="pantalones">Pantalones</option>
+                <option value="accesorios">Accesorios</option>
+            </select>
+
+        </div>
+        <div>
+            <label for="size">Talle: </label>
+            <select name="prod-size" id="prod-size">
+                <option value="xs" selected>  XS </option>
+                <option value="u">  U </option>
+                <option value="s">  S </option>
+                <option value="m">  M </option>
+                <option value="l">  L </option>
+                <option value="xl"> XL </option>
+            </select>
+        </div>
+        <div>
+            <label for="cantidad">Cantidad: </label>
+            <input type="number" required>
+        </div>
+        <div>
+            <label for="color">Color: </label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="price">Precio: </label>
+            <input type="number" required>
+        </div>
+        <div>
+            <label for="image">Imagen:</label>
+            <input type="file" accept="image/png" required>
+        </div>
+        <div class="submit">
+            <button type="submit">Crear producto</button>
+        </form>
+    </section>
+</main>
+<%- include("partials/footer") %> 
+</body>
