@@ -14,7 +14,7 @@
         </div>
         <div class="product-desc"> 
             <label for="description-product">Descripción:</label>
-            <input type="textarea" rows="4" cols="50" name="description-product" required>
+            <textarea minlength="4" name="description-product" required></textarea>
         </div>  
         <div>
             <label for="category-product">Categoría:</label>
@@ -48,6 +48,10 @@
         <div>
             <label for="price-product">Precio: </label>
             <input type="number" name="price-product" required>
+        </div>
+        <div>
+            <label for="discount-product">Descuento: </label>
+            <input type="number" name="discount-product" required>
         </div>
         <div>
             <label for="image-product">Imagen:</label>

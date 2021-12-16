@@ -548,10 +548,13 @@ main.product-edit{
 width:80%;
 margin: 0 auto;
 }
-main.product-create section.forms .product-desc input,
-main.product-edit section.forms .product-desc input{
-
-
+main.product-create section.forms .product-desc textarea,
+main.product-edit section.forms .product-desc textarea{
+height:100px;
+width: 100%;
+border-radius:10px;
+margin: 0px 10px;
+padding: 5px 15px;
 }
 /* ========================= MAIN REGISTER / LOGIN ========================= */
 main.register a, main.login a{
@@ -623,7 +626,7 @@ main.product-edit section.forms input{
    
     width: 100%;
     margin: 0px 10px;
-    padding: 0px 15px
+    padding: 0px 15px;
     
 }
 main.register section.forms .submit,
