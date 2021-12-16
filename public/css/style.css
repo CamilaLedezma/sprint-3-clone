@@ -550,8 +550,8 @@ margin: 0 auto;
 }
 main.product-create section.forms .product-desc input,
 main.product-edit section.forms .product-desc input{
-height:80px;
-text-align: left;
+
+
 }
 /* ========================= MAIN REGISTER / LOGIN ========================= */
 main.register a, main.login a{
@@ -620,7 +620,7 @@ main.register section.forms input,
 main.login section.forms input,
 main.product-create section.forms input,
 main.product-edit section.forms input{
-    display: flex;
+   
     width: 100%;
     margin: 0px 10px;
     padding: 0px 15px

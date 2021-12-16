@@ -10,15 +10,15 @@
     <section class="forms">
         <form action="/" method="post">
         <div>
-            <label for="name" value="name">Nombre:<input type="text" required></label>
+            <label for="name-product" value="name">Nombre:<input type="text" name="name-product" required></label>
         </div>
         <div class="product-desc"> 
-            <label for="description">Descripción:</label>
-            <input type="text" minlength="4" required>
+            <label for="description-product">Descripción:</label>
+            <input type="textarea" rows="4" cols="50" name="description-product" required>
         </div>  
         <div>
-            <label for="prod-category">Categoría:</label>
-            <select name="prod-category" id="prod-category">
+            <label for="category-product">Categoría:</label>
+            <select name="category-product" id="prod-category">
                 <option value="remeras"selected> Remeras</option>
                 <option value="abrigos">Abrigos</option>
                 <option value="pantalones">Pantalones</option>
@@ -27,8 +27,8 @@
 
         </div>
         <div>
-            <label for="size">Talle: </label>
-            <select name="prod-size" id="prod-size">
+            <label for="size-product">Talle: </label>
+            <select name="size-product" id="prod-size">
                 <option value="xs" selected>  XS </option>
                 <option value="u">  U </option>
                 <option value="s">  S </option>
@@ -38,20 +38,20 @@
             </select>
         </div>
         <div>
-            <label for="cantidad">Cantidad: </label>
-            <input type="number" required>
+            <label for="quantity-product">Cantidad: </label>
+            <input type="number" name="cantidad-product" required>
         </div>
         <div>
-            <label for="color">Color: </label>
-            <input type="text" required>
+            <label for="colour-product">Color: </label>
+            <input type="text" name="colour-product" required>
         </div>
         <div>
-            <label for="price">Precio: </label>
-            <input type="number" required>
+            <label for="price-product">Precio: </label>
+            <input type="number" name="price-product" required>
         </div>
         <div>
-            <label for="image">Imagen:</label>
-            <input type="file" accept="image/png" required>
+            <label for="image-product">Imagen:</label>
+            <input type="file" name="image-product" accept="image/png" required>
         </div>
         <div class="submit">
             <button type="submit">Crear producto</button>
